@@ -18,6 +18,9 @@ spec:
       containers:
         - name: flame
           image: shokohsc/flame
+          env:
+          - name:PASSWORD
+            value:
           ports:
             - name: http
               containerPort: 5005
